@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Calendar Pro</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#4f46e5">
+    <link rel="stylesheet" href="style.css">
+    <title>Modern calendar</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Side: Calendar Grid -->
+        <div class="calendar-section">
+            <div class="header">
+                <div class="nav-group">
+                    <button id="prevMonth" class="nav-btn">&lt;</button>
+                    <h2 id="monthYear">November 2026</h2>
+                    <button id="nextMonth" class="nav-btn">&gt;</button>
+                </div>
+                <div class="action-group">
+                    <button id="todayBtn" class="today-btn">Today</button>
+                    <button id="notifyBtn" class="notify-btn">🔔 Enable Alerts</button>
+                    <button id="themeToggle" class="theme-btn">🌙 Dark</button>
+                </div>
+            </div>
+            
+            <div class="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+            
+            <div class="days" id="calendarDays"></div>
+        </div>
+
+        <!-- Right Side: Event Manager -->
+        <div class="events-section">
+            <h3 id="selectedDateText">Events for Today</h3>
+            
+            <div id="holidayBox" style="display: none;">
+                <div id="holidayBanner" class="holiday-banner"></div>
+                <button id="whatsappHolidayBtn" class="whatsapp-btn">📲 Post WhatsApp Status / Share Wishes</button>
+            </div>
+            
+            <div class="event-input">
+                <input type="text" id="eventTitle" placeholder="Event name...">
+                <div class="input-row">
+                    <input type="time" id="eventTime">
+                    <select id="eventCategory">
+                        <option value="personal">🟢 Personal</option>
+                        <option value="work">🔵 Study / Work</option>
+                        <option value="urgent">🔴 Urgent</option>
+                    </select>
+                    <button id="addEventBtn">Add</button>
+                </div>
+            </div>
+            
+            <ul id="eventList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

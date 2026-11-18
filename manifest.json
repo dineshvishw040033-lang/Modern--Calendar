@@ -1,0 +1,9 @@
+{
+  "name": "Modern Calendar ",
+  "short_name": "Calendar",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#4f46e5",
+  "description": "A responsive Progressive Web App (PWA) Calendar with Zero-Click Holiday Alerts and Event Management."
+}
